@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Modal.module.css'
 
+
 const Modal = ({children,handleShow}) => {
     return (
         <>
@@ -8,8 +9,8 @@ const Modal = ({children,handleShow}) => {
             <div className={classes.modalContent}>
                 <button onClick={handleShow}>Close</button>
                 {children}
-            </div>
 
+            </div>
         </>
     );
 };
