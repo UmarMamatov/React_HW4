@@ -27,9 +27,9 @@ function App() {
               </Modal>
           }
           <button onClick={handleShow}>Open</button>
-          <Count/>
-          <p className='inputValue' style={{color: color()}}>{input}</p>
-          <Input  placeholder={'write'} onChangeInput={onChangeInput}/>
+          {/*<Count/>*/}
+          {/*<p className='inputValue' style={{color: color()}}>{input}</p>*/}
+          {/*<Input  placeholder={'write'} onChangeInput={onChangeInput}/>*/}
       </>
 
   );
