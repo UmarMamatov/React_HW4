@@ -1,7 +1,6 @@
 import './App.css';
 import Modal from "./modal/Modal";
 import React, {useState} from "react";
-import Count from "./count/Count";
 import Input from "./input/Input";
 import ToDoList from "./toDoList/ToDoList";
 import Button from "./button/Button";
@@ -72,9 +71,14 @@ function App() {
         setTasks([...tasks])
     }
 
-    const handleEdit= (id,editText)=>{
+    const handleEdit= (editText)=>{
         console.log(editText)
-
+        tasks.map(task=>{
+            if (task.id===editText.id){
+                return task.title = editText.title
+            }
+        })
+        setTasks(tasks)
     }
 
 

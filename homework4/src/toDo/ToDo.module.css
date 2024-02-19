@@ -5,3 +5,10 @@
     border: 1px solid red;
     padding: 30px;
 }
+.done{
+    background-color: green;
+}
+.isDone{
+    text-decoration: line-through;
+
+}
