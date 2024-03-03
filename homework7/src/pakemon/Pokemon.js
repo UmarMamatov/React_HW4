@@ -16,8 +16,6 @@ const PokemonPage = () => {
         setPokemons(data.results)
     }
 
-
-
     const handleNext =  () => {
         setOffset(prev=>prev+limit)
     }
